@@ -1,6 +1,6 @@
 pipeline {
     agent any
-
+    triggers { pullSCM('* * * * *') }
     stages {
         stage('Checkout') {
             steps {
